@@ -18,7 +18,7 @@ class Driver {
     store.trips.filter(fuction (trip) {
       return trip.driverId === this.id;
     }.bind(this); 
-  } 
+  }
 }
 
 let passengerId = 0;
