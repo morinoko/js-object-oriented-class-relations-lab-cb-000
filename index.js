@@ -57,7 +57,7 @@ class Passenger {
       }.bind(this)
     );
 
-    // Alternative 
+    // Alternative
     // return store.trips.filter(trip => {
     //   return trip.passengerID == this.id;
     // });
