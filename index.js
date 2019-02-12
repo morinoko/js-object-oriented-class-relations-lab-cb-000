@@ -1,3 +1,8 @@
+const store = {
+  drivers: [],
+  passengers: []
+}
+
 let driverId = 0;
 
 class Driver {
