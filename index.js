@@ -23,15 +23,11 @@ class Driver {
   }
 
   passengers() {
-    const driverPassengers = [];
+    const trips = this.trips();
 
-    this.trips.forEach(
-      function(trip) {
-        driverPassengers.push(trip.passenger());
-      }
-    );
-
-    return driverPassengers;
+    return trips.map(function(trip) {
+      return trip.passenger();
+    });
   }
 }
 
