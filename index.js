@@ -50,7 +50,7 @@ class Trip {
   }
 
   driver() {
-    store.drivers.find(
+    return store.drivers.find(
       function(driver) {
         return driver.id === this.driverId;
       }.bind(this)
@@ -58,7 +58,7 @@ class Trip {
   }
 
   passenger() {
-    store.passengers.find(
+    return store.passengers.find(
       function(passenger) {
         return passenger.id === this.passengerId;
       }.bind(this)
