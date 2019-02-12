@@ -23,8 +23,8 @@ class Driver {
   }
 
   passengers() {
-
-  }
+    
+  } 
 }
 
 let passengerId = 0;
@@ -53,6 +53,14 @@ class Trip {
     store.drivers.find(
       function(driver) {
         return driver.id === this.driverId;
+      }.bind(this)
+    );
+  }
+
+  passenger() {
+    store.passengers.find(
+      function(passenger) {
+        return passenger.id === this.passengerId;
       }.bind(this)
     );
   }
