@@ -23,7 +23,15 @@ class Driver {
   }
 
   passengers() {
-
+    return this.trips.forEach(
+      function(trip) {
+        const driverPassengers = [];
+        
+        driverPassengers.push(trip.passenger());
+        
+        return driverPassengers;
+      }
+    );
   }
 }
 
