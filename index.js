@@ -4,6 +4,8 @@ const store = {
   trips: []
 }
 
+// Driver Class
+// ------------------------------------
 let driverId = 0;
 
 class Driver {
@@ -31,6 +33,8 @@ class Driver {
   }
 }
 
+// Passenger Class
+// ------------------------------------
 let passengerId = 0;
 
 class Passenger {
@@ -58,6 +62,8 @@ class Passenger {
   }
 }
 
+// Trip Class
+// ------------------------------------
 let tripId = 0;
 
 class Trip {
