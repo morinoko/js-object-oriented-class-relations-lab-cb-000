@@ -22,6 +22,11 @@ class Driver {
         return trip.driverId === this.id;
       }.bind(this)
     );
+
+    // Alternative:
+    // return store.trips.filter(trip => {
+    //   return trip.driverId == this.id;
+    // });
   }
 
   passengers() {
@@ -51,6 +56,11 @@ class Passenger {
         return trip.passengerId === this.id;
       }.bind(this)
     );
+
+    // Alternative 
+    // return store.trips.filter(trip => {
+    //   return trip.passengerID == this.id;
+    // });
   }
 
   drivers() {
@@ -81,6 +91,11 @@ class Trip {
         return driver.id === this.driverId;
       }.bind(this)
     );
+
+    // Alternative
+    // return store.drivers.find(driver => {
+    //   return driver.id === this.driverId;
+    // });
   }
 
   passenger() {
@@ -89,5 +104,10 @@ class Trip {
         return passenger.id === this.passengerId;
       }.bind(this)
     );
+
+    // Alternative
+    // return store.passengers.find(passenger => {
+    //   return passenger.id === this.passengerId;
+    // });
   }
 }
