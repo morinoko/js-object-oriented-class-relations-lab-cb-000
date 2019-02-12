@@ -53,7 +53,7 @@ class Passenger {
     const trips = this.trips();
 
     return trips.map(function(trip) {
-      trip.driver();
+      return trip.driver();
     });
   }
 }
