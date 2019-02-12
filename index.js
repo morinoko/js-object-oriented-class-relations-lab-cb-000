@@ -21,6 +21,10 @@ class Driver {
       }.bind(this)
     );
   }
+
+  passengers() {
+    
+  } 
 }
 
 let passengerId = 0;
@@ -43,5 +47,13 @@ class Trip {
     this.passengerId = passenger.id;
 
     store.trips.push(this);
+  }
+
+  driver() {
+    store.drivers.find(
+      function(driver) {
+        return driver.id === this.driverId;
+      }.bind(this)
+    );
   }
 }
