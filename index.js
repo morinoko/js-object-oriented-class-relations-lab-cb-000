@@ -23,8 +23,8 @@ class Driver {
   }
 
   passengers() {
-    
-  } 
+
+  }
 }
 
 let passengerId = 0;
